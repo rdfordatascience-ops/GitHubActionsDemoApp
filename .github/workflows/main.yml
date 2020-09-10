@@ -19,8 +19,8 @@ jobs:
     - uses: actions/checkout@v1
     - name: iOS
       run: |
-        cd Blank
+        cd GitHubActionDemo
         nuget restore
-        msbuild Blank.iOS/Blank.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
+        msbuild GitHubActionDemo.iOS/GitHubActionDemo.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
 
         
